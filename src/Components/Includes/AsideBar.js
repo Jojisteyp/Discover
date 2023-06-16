@@ -6,7 +6,8 @@ function AsideBar() {
   return (
     <LeftContainer>
         <SideBarContents>
-            <NavLinks>
+            <NavLinks  to={"/"}
+                    className={({ isActive }) => (isActive ? "active" : "")} >
                 <SideBarImg  src={
                             require("../../assets/Images/Property 1=home.svg")
                                 .default
@@ -14,28 +15,32 @@ function AsideBar() {
             </NavLinks>
         </SideBarContents>
         <SideBarContents>
-            <NavLinks>
+            <NavLinks  to={"music/"}
+                    className={({ isActive }) => (isActive ? "active" : "")}>
                 <SideBarImg  src={
                             require("../../assets/Images/Property 1=music.svg")
                                 .default
                         } />
             </NavLinks>
         </SideBarContents> <SideBarContents>
-            <NavLinks>
+            <NavLinks  to={"accounts/"}
+                    className={({ isActive }) => (isActive ? "active" : "")}>
                 <SideBarImg  src={
                             require("../../assets/Images/Property 1=account.svg")
                                 .default
                         } />
-            </NavLinks>
+            </NavLinks >
         </SideBarContents> <SideBarContents>
-            <NavLinks>
+            <NavLinks  to={"files/"}
+                    className={({ isActive }) => (isActive ? "active" : "")}>
                 <SideBarImg  src={
                             require("../../assets/Images/Property 1=file.svg")
                                 .default
                         } />
             </NavLinks>
         </SideBarContents> <SideBarContents>
-            <NavLinks>
+            <NavLinks  to={"settings/"}
+                    className={({ isActive }) => (isActive ? "active" : "")}>
                 <SideBarImg  src={
                             require("../../assets/Images/Property 1=settings.svg")
                                 .default
