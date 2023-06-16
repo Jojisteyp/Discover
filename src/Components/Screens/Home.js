@@ -1,12 +1,24 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
-function Home() {
-  return (
-    <>
-    <Helmet>
-       <title>Podcast | Home</title>
-    </Helmet>
-   </>  )
-}
+import MiddleContainer from './MiddleContainer';
+import styled from "styled-components"
 
-export default Home
+   function Home() {
+      return (
+         
+          <MainContainer>
+              <MiddleContainer/>
+          </MainContainer>
+      );
+  }
+  
+  export default Home;
+  
+  const MainContainer = styled.div`
+ 
+  `;
+//   const FlexContainer = styled.div`
+//    display: flex;
+//   justify-content: space-between;
+//   `;
+//   const LeftSideContainer = styled.div``;
+//   const RightSideContainer = styled.div``;

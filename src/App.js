@@ -24,7 +24,6 @@ function App() {
         </Routes>
       </SubContainers>
       <RightContainer/>
-
     </MainContainer>
    </Router>
   );

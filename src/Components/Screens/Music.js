@@ -21,9 +21,10 @@ const ComingSoon = styled.div`
     border-right: 1px solid #d9d9d9;
     border-left: 1px solid #d9d9d9;
     height: 100vh;
-    width: 80%;
+    width: 76%;
     display: flex;
     align-items: center;
+    background-color: #d9d9d9;
 `;
 const Heading = styled.h1`
 font-size: 100px;
