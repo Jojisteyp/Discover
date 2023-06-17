@@ -63,6 +63,113 @@ function MiddleContainer() {
                     )}
          </RightContent>
         </SpotLight>
+        <CategoryContainer>
+            <CategoryTop>
+                <CategoryText>Category</CategoryText>
+                <SeeAllTxt>See All</SeeAllTxt>
+            </CategoryTop>
+            <CategoryBottom>
+                <CategorySelection>
+                    <CategoryImage>
+                        <CategoryImg src={require("../../assets/Images/Property 1=profile b.svg").default} />
+                    </CategoryImage>
+                    <CategoryDetails>
+                        <CategoryName>Social</CategoryName>
+                        <Count>134+</Count>
+                    </CategoryDetails>
+                </CategorySelection>
+                <CategorySelection>
+                    <CategoryImage>
+                    <CategoryImg src={require("../../assets/Images/Property 1=map b.svg").default} />
+                    </CategoryImage>
+                    <CategoryDetails>
+                        <CategoryName>Travel</CategoryName>
+                        <Count>243+</Count>
+                    </CategoryDetails>
+                </CategorySelection>
+                <CategorySelection>
+                    <CategoryImage>
+                    <CategoryImg src={require("../../assets/Images/Property 1=qoute b.svg").default} />
+                    </CategoryImage>
+                    <CategoryDetails>
+                        <CategoryName>Insight</CategoryName>
+                        <Count>150+</Count>
+                    </CategoryDetails>
+                </CategorySelection>
+                <CategorySelection>
+                    <CategoryImage>
+                    <CategoryImg src={require("../../assets/Images/Property 1=note b.svg").default} />
+                    </CategoryImage>
+                    <CategoryDetails>
+                        <CategoryName>Profession</CategoryName>
+                        <Count>120+</Count>
+                    </CategoryDetails>
+                </CategorySelection>
+                <CategorySelection>
+                    <CategoryImage>
+                    <CategoryImg src={require("../../assets/Images/Property 1=reward b.svg").default} />
+                    </CategoryImage>
+                    <CategoryDetails>
+                        <CategoryName>Sport</CategoryName>
+                        <Count>321+</Count>
+                    </CategoryDetails>
+                </CategorySelection>
+            </CategoryBottom>
+        </CategoryContainer>
+        <PopularTop>
+            <PopularTxt>Most popular</PopularTxt>
+            <SeeAllTxt>See All</SeeAllTxt>
+        </PopularTop>
+        <PopularBottomList>
+            <PopularBottom>
+                <PopProfileArea>
+                    <SerialNum>01</SerialNum>
+                    <PopularProfile>
+                        <PopProfImg src={require("../../assets/Images/Frame 3466915.png")} />
+                    </PopularProfile>
+                    <ArtistDetails>
+                        <PopularPlay>
+                            How to be a productive person
+                        </PopularPlay>
+                        <PopArtist>Johnson alert</PopArtist>
+                    </ArtistDetails>
+                </PopProfileArea>
+                <PopCountArea>
+                    <CountAreaLeft>
+                        <PopSound>
+                            <PopSoundImg src={require("../../assets/Images/Property 1=sound.svg").default} />
+                        </PopSound>
+                        <PopFollow>100,045</PopFollow>
+                    </CountAreaLeft>
+                    <CountAreaRight>
+                        <PopTimer>
+                        <PopTimerImg src={require("../../assets/Images/Property 1=alarm.svg").default} />
+                        </PopTimer>
+                        <Duration>04:30</Duration>
+                    </CountAreaRight>
+                </PopCountArea>
+            </PopularBottom>
+            <PopularBottom>
+                <PopProfileArea>
+                    <ArtistDetails>  
+                    </ArtistDetails>
+                </PopProfileArea>
+                <PopCountArea>
+                    <CountAreaLeft>
+                        <PopSound>
+                        <PopSoundImg src={require("../../assets/Images/Property 1=sound.svg").default} />
+                        </PopSound>
+                        <PopFollow>900,000</PopFollow>
+                    </CountAreaLeft>
+                    <CountAreaRight>
+                        <PopTimer>
+                        <PopSoundImg src={require("../../assets/Images/Property 1=alarm.svg").default} />
+                        </PopTimer>
+                        <Duration>03:40</Duration>
+                    </CountAreaRight>
+                </PopCountArea>
+            </PopularBottom>
+        </PopularBottomList>
      </MiddlleSection>
     </>
     )
@@ -197,29 +304,13 @@ const RightContent = styled.div`
         background-color: rgba(120, 114, 114, 0.5);
         color: #f6f5f4;
     }
-    @media all and (max-width: 1280px) {
-        width: 278px;
-    }
-    @media all and (max-width: 1080px) {
-        width: 327px;
-    }
-    @media all and (max-width: 1080px) {
-        width: 327px;
-    }
-    @media all and (max-width: 768px) {
-        width: 338px;
-    }
-    @media all and (max-width: 360px) {
-        display: none;
-    }
+   
 `;
 const SpotlightProfileImage = styled.div`
     width: 30px;
     margin-right: 10px;
     cursor: pointer;
-    @media all and (max-width: 768px) {
-        width: 45px;
-    }
+   
 `;
 const SpotProfImg = styled.img`
     width: 100%;
@@ -254,5 +345,158 @@ const SpotFollowBtn = styled.button`
         color: #f6f5f4;
     }
 `;
+const CategoryContainer = styled.div``;
 
+const CategoryTop = styled.div`
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #9e9696;
+    align-items: flex-end;
+`;
+const CategoryText = styled.h2`
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+`;
+const SeeAllTxt = styled.h3`
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    cursor: pointer;
+   
+`;
 
+const CategoryBottom = styled.ul`
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 30px;
+    
+`;
+const CategorySelection = styled.li`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  
+`;
+const CategoryImage = styled.div`
+    width: 45px;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 10px;
+`;
+const CategoryImg = styled.img`
+    display: block;
+    width: 100%;
+`;
+const CategoryDetails = styled.div``;
+const CategoryName = styled.h4`
+    font-size: 14px;
+    font-weight: 500;
+ 
+    
+`;
+const Count = styled.h4`
+    font-size: 12px;
+    color: #a6a5a5;
+`;
+const PopularTop = styled.div`
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #9e9696;
+    align-items: flex-end;
+    margin-bottom: 20px;
+`;
+const PopularTxt = styled.h2`
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+ 
+`;
+
+const PopularBottomList = styled.ul``;
+const PopularBottom = styled.li`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+`;
+
+const ArtistDetails = styled.div``;
+const PopProfileArea = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 27%;
+    cursor: pointer;
+   
+`;
+const SerialNum = styled.h3`
+    font-size: 13px;
+    font-weight: 600;
+   
+`;
+const PopularProfile = styled.div`
+    width: 40px;
+    margin: 5px;
+  
+`;
+const PopProfImg = styled.img`
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+`;
+const PopularPlay = styled.h2`
+font-size: 15px;
+font-weight: 700;
+`;
+const PopArtist = styled.h5`
+    font-size: 12px;
+    color: #a6a5a5;
+`;
+
+const PopCountArea = styled.div`
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+`;
+
+const CountAreaLeft = styled.div`
+    display: flex;
+    align-items: center;
+  
+`;
+const PopSound = styled.div`
+    width: 30px;
+    margin-right: 10px;
+`;
+const PopSoundImg = styled.img`
+    display: block;
+    width: 100%;
+`;
+const PopFollow = styled.h3`
+    font-size: 15px;
+    color: #9e9696;
+`;
+
+const CountAreaRight = styled.div`
+    display: flex;
+    align-items: center;
+   
+`;
+const PopTimer = styled.div`
+    width: 30px;
+    margin-right: 10px;
+`;
+const PopTimerImg = styled.img`
+    display: block;
+    width: 100%;
+`;
+const Duration = styled.h3`
+    font-size: 15px;
+    color: #9e9696;
+`;

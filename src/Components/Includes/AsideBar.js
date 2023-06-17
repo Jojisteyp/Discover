@@ -54,7 +54,7 @@ function AsideBar() {
 export default AsideBar
 
 const LeftContainer = styled.ul`
-  width: 7%;
+  width: 8%;
     height: 100vh;
     display: flex;
     flex-direction: column;
