@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { styled } from 'styled-components'
 import { Helmet } from 'react-helmet';
 import BgImg from '../../assets/Images/backroundimage.png';
 
 
 function MiddleContainer() {
+    const [Follow, SetFollow] =useState(false)
   return (
     <>
     <Helmet>
@@ -28,16 +29,39 @@ function MiddleContainer() {
                        <PlayingImage>
                          <PlayingImg src={require("../../assets/Images/Property 1=melody w.svg").default} />
                       </PlayingImage>
-                      <PlayingText>playing</PlayingText>
+                      <PlayingText>Playing</PlayingText>
                             </Playing>
                             <PlayLater>
                                 <PlayLaterImage>
                                 <PlayingImg src={require("../../assets/Images/Property 1=music w.svg").default} />
                      </PlayLaterImage>
-                      <PlayLaterTxt>play later</PlayLaterTxt>
+                      <PlayLaterTxt>Play later</PlayLaterTxt>
                  </PlayLater>
             </BottomElement>
         </LeftContent>
+        <RightContent>
+            <SpotlightProfileImage>
+                <SpotProfImg
+                    src={require("../../assets/Images/Frame 3466917.png")}
+                />
+            </SpotlightProfileImage>
+            <SpotContents>
+                <SpotProfName>Jason Albert</SpotProfName>
+                <SpotFollowers>200,456 followers</SpotFollowers>
+            </SpotContents>
+            {Follow ? (
+                <SpotFollowBtn
+                    className={"activebtn"}
+                    onClick={() => SetFollow(false)}
+                >
+                    Following
+                </SpotFollowBtn>
+              ) : (
+                <SpotFollowBtn onClick={() => SetFollow(true)}>
+                    Follow
+                </SpotFollowBtn>
+                    )}
+         </RightContent>
         </SpotLight>
      </MiddlleSection>
     </>
@@ -49,7 +73,6 @@ export default MiddleContainer ;
 const MiddlleSection = styled.div`
     height: 100vh;
     padding: 30px 20px 0;
-    width: 76%;
    
 `;
 const Heading = styled.div`
@@ -100,7 +123,7 @@ const Maintext = styled.h1`
     width: 80%;
     font-weight:600;
     font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
 `;
 const BottomElement = styled.div`
     display: flex;
@@ -160,5 +183,76 @@ font-size: 14px;
 font-weight: 500;
 `;
 
+const RightContent = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    background: rgba(217, 217, 217, 0.5);
+    width: 230px;
+    height: 60px;
+    padding: 0 20px;
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(120, 114, 114, 0.5);
+        color: #f6f5f4;
+    }
+    @media all and (max-width: 1280px) {
+        width: 278px;
+    }
+    @media all and (max-width: 1080px) {
+        width: 327px;
+    }
+    @media all and (max-width: 1080px) {
+        width: 327px;
+    }
+    @media all and (max-width: 768px) {
+        width: 338px;
+    }
+    @media all and (max-width: 360px) {
+        display: none;
+    }
+`;
+const SpotlightProfileImage = styled.div`
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    @media all and (max-width: 768px) {
+        width: 45px;
+    }
+`;
+const SpotProfImg = styled.img`
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+`;
+const SpotContents = styled.div`
+`;
+const SpotProfName = styled.h4`
+    font-size: 13px;
+    color: #fff;
+    font-weight: 500;
+`;
+const SpotFollowers = styled.h5`
+    font-size: 12px;
+    color: #d9d9d9;
+`;
+const SpotFollowBtn = styled.button`
+    background: #eaeaea;
+    border-radius: 50px;
+    padding: 4px 10px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    &.activebtn {
+        background: blue;
+        color: #fff;
+    }
+    &:hover {
+        background-color: #21282c;
+        color: #f6f5f4;
+    }
+`;
 
 

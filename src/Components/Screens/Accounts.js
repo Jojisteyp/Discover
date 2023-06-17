@@ -22,7 +22,6 @@ const ComingSoon = styled.div`
     border-right: 1px solid #d9d9d9;
     border-left: 1px solid #d9d9d9;
     height: 100vh;
-    width: 76%;
     display: flex;
     align-items: center;
     background-color: #b9f9d9;
