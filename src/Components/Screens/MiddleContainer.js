@@ -205,7 +205,10 @@ const SearchContainer = styled.form`
     width: 300px;
    
 `;
-const SearchText = styled.input``;
+const SearchText = styled.input`
+font-weight: 500;
+font-family: Arial, Helvetica, sans-serif;
+`;
 const SearchLogo = styled.button`
     width: 17px;
     cursor: pointer;
@@ -363,7 +366,7 @@ const CategoryText = styled.h2`
 `;
 const SeeAllTxt = styled.h3`
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 10px;
     cursor: pointer;
    
