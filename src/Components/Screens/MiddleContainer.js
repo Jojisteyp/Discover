@@ -2,12 +2,26 @@ import React, { useState } from 'react'
 import { styled } from 'styled-components'
 import { Helmet } from 'react-helmet';
 import BgImg from '../../assets/Images/backroundimage.png';
+import InsightModal from "../Includes/Modals/InsightModal";
+import ProfessionModal from '../Includes/Modals/ProffesionModal';
+import SocialModal from '../Includes/Modals/SocialModal';   
+import SportsModal from '../Includes/Modals/SportsModal';
+import TravelModal from '../Includes/Modals/TravelModal';
+
 
 
 function MiddleContainer() {
+    const [isOpen, setOpen] = useState("")
     const [Follow, SetFollow] =useState(false)
   return (
     <>
+    {isOpen==="InsightModal" && <InsightModal onClose={()=>setOpen("")}/>}
+    {isOpen==="ProffesionModal" && < ProfessionModal onClose={()=>setOpen("")}/>}
+    {isOpen==="SocialModal" && < SocialModal onClose={()=>setOpen("")}/>}
+    {isOpen==="SportsModal" && < SportsModal onClose={()=>setOpen("")}/>}
+    {isOpen==="TravelModal" && < TravelModal onClose={()=>setOpen("")}/>}
+
+
     <Helmet>
        <title>Podcast | Home</title>
      </Helmet>
@@ -74,8 +88,12 @@ function MiddleContainer() {
                         <CategoryImg src={require("../../assets/Images/Property 1=profile b.svg").default} />
                     </CategoryImage>
                     <CategoryDetails>
-                        <CategoryName>Social</CategoryName>
+
+
+                    <CategoryName   onClick={() => setOpen("SocialModal")}>Social</CategoryName>
                         <Count>134+</Count>
+
+
                     </CategoryDetails>
                 </CategorySelection>
                 <CategorySelection>
@@ -83,7 +101,7 @@ function MiddleContainer() {
                     <CategoryImg src={require("../../assets/Images/Property 1=map b.svg").default} />
                     </CategoryImage>
                     <CategoryDetails>
-                        <CategoryName>Travel</CategoryName>
+                        <CategoryName onClick={() => setOpen("TravelModal")} >Travel</CategoryName>
                         <Count>243+</Count>
                     </CategoryDetails>
                 </CategorySelection>
@@ -92,7 +110,7 @@ function MiddleContainer() {
                     <CategoryImg src={require("../../assets/Images/Property 1=qoute b.svg").default} />
                     </CategoryImage>
                     <CategoryDetails>
-                        <CategoryName>Insight</CategoryName>
+                        <CategoryName  onClick={() => setOpen("InsightModal")}>Insight</CategoryName>
                         <Count>150+</Count>
                     </CategoryDetails>
                 </CategorySelection>
@@ -101,7 +119,7 @@ function MiddleContainer() {
                     <CategoryImg src={require("../../assets/Images/Property 1=note b.svg").default} />
                     </CategoryImage>
                     <CategoryDetails>
-                        <CategoryName>Profession</CategoryName>
+                        <CategoryName   onClick={() => setOpen("ProffesionModal")}>Profession</CategoryName>
                         <Count>120+</Count>
                     </CategoryDetails>
                 </CategorySelection>
@@ -110,7 +128,7 @@ function MiddleContainer() {
                     <CategoryImg src={require("../../assets/Images/Property 1=reward b.svg").default} />
                     </CategoryImage>
                     <CategoryDetails>
-                        <CategoryName>Sport</CategoryName>
+                        <CategoryName  onClick={() => setOpen("SportsModal")}>Sport</CategoryName>
                         <Count>321+</Count>
                     </CategoryDetails>
                 </CategorySelection>

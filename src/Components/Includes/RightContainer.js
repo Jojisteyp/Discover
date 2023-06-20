@@ -413,4 +413,5 @@ const TotalDuration = styled.h3`
     right: 50px;
     width: 140px;
   }
+
 `;
