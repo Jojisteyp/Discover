@@ -308,6 +308,11 @@ const FollowBtn = styled.button`
     background-color: #21282c;
     color: #f6f5f4;
   }
+  @media all and (max-width: 1080px){
+    padding: 2px 5px;
+    font-size: 12px;
+    font-weight: 600;
+  }
 `;
 
 const RightBottom = styled.div`
@@ -326,6 +331,9 @@ const MusicHeading = styled.h3`
   color: #fff;
   width: 85%;
   padding: 20px;
+  @media all and (max-width: 1080px){
+    font-size: 20px;
+  }
 `;
 const MusicControls = styled.div`
   background: rgba(217, 217, 217, 0.5);
@@ -336,6 +344,10 @@ const MusicControls = styled.div`
   @media all and (max-width: 1380px){
     padding-top: 24px;
     margin: 0px;
+     @media all and (max-width: 1080px){
+      
+      height: 86px;
+     }
   }
 `;
 const MainControls = styled.ul`

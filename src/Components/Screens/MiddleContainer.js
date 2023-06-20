@@ -447,6 +447,9 @@ const PopularTxt = styled.h2`
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 20px;
+    @media all and (max-width: 1080px){
+        font-size: 28px;
+    }
  
 `;
 
@@ -485,6 +488,9 @@ const PopProfImg = styled.img`
 const PopularPlay = styled.h2`
 font-size: 15px;
 font-weight: 700;
+@media all and (max-width: 1080px){
+    font-size: 13px;
+}
 `;
 const PopArtist = styled.h5`
     font-size: 12px;
