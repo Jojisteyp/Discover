@@ -83,52 +83,48 @@ function MiddleContainer() {
                 <SeeAllTxt>See All</SeeAllTxt>
             </CategoryTop>
             <CategoryBottom>
-                <CategorySelection>
+                <CategorySelection  onClick={() => setOpen("SocialModal")}>
                     <CategoryImage>
                         <CategoryImg src={require("../../assets/Images/Property 1=profile b.svg").default} />
                     </CategoryImage>
                     <CategoryDetails>
-
-
-                    <CategoryName   onClick={() => setOpen("SocialModal")}>Social</CategoryName>
+                    <CategoryName  >Social</CategoryName>
                         <Count>134+</Count>
-
-
                     </CategoryDetails>
                 </CategorySelection>
-                <CategorySelection>
+                <CategorySelection  onClick={() => setOpen("TravelModal")}>
                     <CategoryImage>
                     <CategoryImg src={require("../../assets/Images/Property 1=map b.svg").default} />
                     </CategoryImage>
                     <CategoryDetails>
-                        <CategoryName onClick={() => setOpen("TravelModal")} >Travel</CategoryName>
+                        <CategoryName >Travel</CategoryName>
                         <Count>243+</Count>
                     </CategoryDetails>
                 </CategorySelection>
-                <CategorySelection>
+                <CategorySelection  onClick={() => setOpen("InsightModal")}>
                     <CategoryImage>
                     <CategoryImg src={require("../../assets/Images/Property 1=qoute b.svg").default} />
                     </CategoryImage>
                     <CategoryDetails>
-                        <CategoryName  onClick={() => setOpen("InsightModal")}>Insight</CategoryName>
+                        <CategoryName >Insight</CategoryName>
                         <Count>150+</Count>
                     </CategoryDetails>
                 </CategorySelection>
-                <CategorySelection>
+                <CategorySelection  onClick={() => setOpen("ProffesionModal")}>
                     <CategoryImage>
                     <CategoryImg src={require("../../assets/Images/Property 1=note b.svg").default} />
                     </CategoryImage>
                     <CategoryDetails>
-                        <CategoryName   onClick={() => setOpen("ProffesionModal")}>Profession</CategoryName>
+                        <CategoryName  >Profession</CategoryName>
                         <Count>120+</Count>
                     </CategoryDetails>
                 </CategorySelection>
-                <CategorySelection>
+                <CategorySelection  onClick={() => setOpen("SportsModal")}>
                     <CategoryImage>
                     <CategoryImg src={require("../../assets/Images/Property 1=reward b.svg").default} />
                     </CategoryImage>
                     <CategoryDetails>
-                        <CategoryName  onClick={() => setOpen("SportsModal")}>Sport</CategoryName>
+                        <CategoryName >Sport</CategoryName>
                         <Count>321+</Count>
                     </CategoryDetails>
                 </CategorySelection>
@@ -211,7 +207,10 @@ const MainTitle = styled.h1`
     font-size: 60px;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
- 
+    @media all and (max-width: 1380px){
+        font-size: 45px;
+    }
+    
 `;
 const SearchContainer = styled.form`
     display: flex;
@@ -252,11 +251,17 @@ const Maintext = styled.h1`
     font-weight:600;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 90px;
+     @media all and (max-width: 1380px){
+        font-size: 30px;
+     }
 `;
 const BottomElement = styled.div`
     display: flex;
     justify-content: space-between;
     width: 40%;
+    @media all and (max-width: 1280px) {
+        width: 48%;
+    }
 
 `;
 const Playing = styled.div`
@@ -380,6 +385,9 @@ const CategoryText = styled.h2`
     margin-top: 20px;
     margin-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    @media all and (max-width: 1380px){
+        font-size: 30px;
+    }
    
 `;
 const SeeAllTxt = styled.h3`
@@ -394,6 +402,9 @@ const CategoryBottom = styled.ul`
     display: flex;
     justify-content: space-between;
     margin: 20px 0 30px;
+    @media all and (max-width: 1380px){
+        margin: 10px 5px;
+    }
     
 `;
 const CategorySelection = styled.li`

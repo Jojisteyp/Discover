@@ -205,9 +205,10 @@ const FriendListTxt = styled.h2`
   font-size: 32px;
   font-weight: 500;
   margin-bottom: 20px;
-  @media all and (max-width: 480px) {
-    font-size: 28px;
-  }
+   @media all and (max-width: 1380px){
+    font-size: 30px;
+   }
+  
 `;
 const OptionsMenu = styled.div`
   width: 35px;
@@ -222,31 +223,16 @@ const FriendProfile = styled.ul`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media all and (max-width: 480px) {
-    flex-wrap: wrap;
-    width: 99%;
-  }
-  @media all and (max-width: 360px) {
-    width: 50%;
-  }
+ 
 `;
 const FriendProfList = styled.li`
   margin: 10px 0 20px;
   cursor: pointer;
-  @media all and (max-width: 360px) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+
 `;
 const FriendProfImage = styled.div`
   width: 40px;
-  @media all and (max-width: 980px) {
-    width: 60px;
-  }
-  @media all and (max-width: 360px) {
-    margin-right: 20px;
-  }
+  
 `;
 const FriendProfImg = styled.img`
   width: 100%;
@@ -257,12 +243,7 @@ const FriendProfName = styled.h5`
   font-size: 12px;
   color: #a6a5a5;
   text-align: center;
-  @media all and (max-width: 980px) {
-    font-size: 15px;
-  }
-  @media all and (max-width: 360px) {
-    font-size: 17px;
-  }
+
 `;
 
 const RightMiddle = styled.div``;
@@ -271,9 +252,7 @@ const PodcastHeading = styled.h2`
   margin-bottom: 20px;
   font-size: 32px;
   font-weight: 500;
-  @media all and (max-width: 480px) {
-    font-size: 28px;
-  }
+
 `;
 const PodcastList = styled.ul`
   border-top: 1px solid #a6a5a5;
@@ -292,12 +271,13 @@ const LeftDiv = styled.div`
 const LeftImage = styled.div`
   width: 38px;
   margin-right: 10px;
+   @media all and (max-width: 1380px){
+    width: 30px;
+   }
   @media all and (max-width: 980px) {
     width: 55px;
   }
-  @media all and (max-width: 480px) {
-    width: 50px;
-  }
+ 
 `;
 const LeftImg = styled.img`
   width: 100%;
@@ -308,25 +288,12 @@ const ProfDetails = styled.div``;
 const ProfName = styled.h4`
   font-size: 14px;
   font-weight: 500;
-  @media all and (max-width: 980px) {
-    font-size: 18px;
-  }
-  @media all and (max-width: 480px) {
-    font-size: 15px;
-  }
-  @media all and (max-width: 360px) {
-    font-size: 14px;
-  }
+ 
 `;
 const FollowCount = styled.h5`
   font-size: 11px;
   color: #9e9696;
-  @media all and (max-width: 980px) {
-    font-size: 15px;
-  }
-  @media all and (max-width: 360px) {
-    font-size: 10px;
-  }
+
 `;
 const FollowBtn = styled.button`
   border-radius: 50px;
@@ -347,6 +314,10 @@ const RightBottom = styled.div`
   background: url(${MusicBg}) no-repeat !important;
   background-size: cover;
   margin-top: 20px;
+   @media all and (max-width: 1380px){
+    width: 100%;
+    height: 30%;
+   }
 `;
 
 const MusicHeading = styled.h3`
@@ -362,6 +333,10 @@ const MusicControls = styled.div`
   height: 100px;
   padding-top: 35px;
   margin-top: 45px;
+  @media all and (max-width: 1380px){
+    padding-top: 24px;
+    margin: 0px;
+  }
 `;
 const MainControls = styled.ul`
   display: flex;
