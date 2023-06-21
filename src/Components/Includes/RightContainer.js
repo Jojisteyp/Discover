@@ -252,6 +252,9 @@ const PodcastHeading = styled.h2`
   margin-bottom: 20px;
   font-size: 32px;
   font-weight: 500;
+  @media all and (max-width: 980px){
+    font-size: 25px;
+  }
 
 `;
 const PodcastList = styled.ul`
@@ -275,7 +278,7 @@ const LeftImage = styled.div`
     width: 30px;
    }
   @media all and (max-width: 980px) {
-    width: 55px;
+    width: 34px;
   }
  
 `;
@@ -288,6 +291,9 @@ const ProfDetails = styled.div``;
 const ProfName = styled.h4`
   font-size: 14px;
   font-weight: 500;
+  @media all and (max-width: 980px){
+    font-size: 12px;
+  }
  
 `;
 const FollowCount = styled.h5`

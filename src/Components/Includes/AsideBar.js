@@ -71,6 +71,11 @@ const SideBarContents = styled.li`
     &&:first-child {
         margin-top: 40px;
     }
+    @media all and (max-width: 980px){
+        width: 30px;
+        margin: 7px 5px;
+    }
+
     `;
 
 

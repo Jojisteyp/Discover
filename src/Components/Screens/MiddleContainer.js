@@ -210,6 +210,10 @@ const MainTitle = styled.h1`
     @media all and (max-width: 1380px){
         font-size: 45px;
     }
+        @media all and (max-width: 980px){
+            font-size: 35px;
+        }
+
     
 `;
 const SearchContainer = styled.form`
@@ -388,6 +392,10 @@ const CategoryText = styled.h2`
     @media all and (max-width: 1380px){
         font-size: 30px;
     }
+     @media all and (max-width: 980px){
+        font-size: 26px;
+     }
+
    
 `;
 const SeeAllTxt = styled.h3`
@@ -395,6 +403,10 @@ const SeeAllTxt = styled.h3`
     font-weight: 600;
     margin-bottom: 10px;
     cursor: pointer;
+     @media all and (max-width: 980px){
+        font-size: 14px;
+     }
+
    
 `;
 
@@ -420,6 +432,9 @@ const CategoryImage = styled.div`
     border-radius: 50%;
     padding: 5px;
     margin-right: 10px;
+    @media all and (max-width: 980px){
+        width: 35px;
+    }
 `;
 const CategoryImg = styled.img`
     display: block;
@@ -429,7 +444,7 @@ const CategoryDetails = styled.div``;
 const CategoryName = styled.h4`
     font-size: 14px;
     font-weight: 500;
- 
+    
     
 `;
 const Count = styled.h4`
@@ -450,6 +465,10 @@ const PopularTxt = styled.h2`
     @media all and (max-width: 1080px){
         font-size: 28px;
     }
+    @media all and (max-width: 980px){
+        font-size: 25px;
+    }
+
  
 `;
 
@@ -459,7 +478,12 @@ const PopularBottom = styled.li`
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    @media all and (max-width: 980px){
+        margin-bottom: 0px;
+    }
 `;
+
+ 
 
 const ArtistDetails = styled.div``;
 const PopProfileArea = styled.div`
@@ -471,12 +495,12 @@ const PopProfileArea = styled.div`
    
 `;
 const SerialNum = styled.h3`
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 600;
    
 `;
 const PopularProfile = styled.div`
-    width: 40px;
+    width: 50px;
     margin: 5px;
   
 `;
@@ -491,6 +515,10 @@ font-weight: 700;
 @media all and (max-width: 1080px){
     font-size: 13px;
 }
+@media all and (max-width: 980px){
+    width: 190px;
+    font-size: 14px;
+}
 `;
 const PopArtist = styled.h5`
     font-size: 12px;
@@ -499,7 +527,7 @@ const PopArtist = styled.h5`
 
 const PopCountArea = styled.div`
     display: flex;
-    width: 30%;
+    width: 25%;
     justify-content: space-between;
 `;
 
@@ -511,6 +539,10 @@ const CountAreaLeft = styled.div`
 const PopSound = styled.div`
     width: 30px;
     margin-right: 10px;
+    @media all and (max-width: 980px){
+        width: 20px;
+    }
+
 `;
 const PopSoundImg = styled.img`
     display: block;
@@ -519,6 +551,10 @@ const PopSoundImg = styled.img`
 const PopFollow = styled.h3`
     font-size: 15px;
     color: #9e9696;
+    @media all and (max-width: 980px){
+        font-size: 11px;
+    }
+
 `;
 
 const CountAreaRight = styled.div`
@@ -537,4 +573,8 @@ const PopTimerImg = styled.img`
 const Duration = styled.h3`
     font-size: 15px;
     color: #9e9696;
+    @media all and (max-width: 980px){
+        font-size: 11px;
+    }
+
 `;
